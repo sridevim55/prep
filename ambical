@@ -1,0 +1,20 @@
+
+
+#include<stdio.h>
+int main(){
+    int a,a1,sum1=0,sum=0;
+    scanf("%d",&a);
+    for(int i=1;i<=a/2;i++){
+        if(a%i==0){
+            sum+=i;
+        }
+    }
+    scanf("%d",&a1);
+    for(int i=1;i<=a1/2;i++){
+        if(a1%i==0){
+            sum1+=i;
+        }
+    }
+    (a==sum & a1==sum1)?printf("friendly pair/ ambical"):printf("not");
+    return 0;
+}
