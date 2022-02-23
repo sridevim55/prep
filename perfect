@@ -1,0 +1,15 @@
+// For example, 6 is a perfect number.
+// The divisors of 6 are 1, 2 and 3.1 + 2 + 3 = 6.
+
+#include<stdio.h>
+int main(){
+    int a,sum=0;
+    scanf("%d",&a);
+    for(int i=1;i<=a/2;i++){
+        if(a%i==0){
+            sum+=i;
+        }
+    }
+    (a==sum)?printf("perfect"):printf("not");
+    return 0;
+}
